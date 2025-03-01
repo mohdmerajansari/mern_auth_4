@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://mern-auth-4-api.vercel.app/api/clients/clientLogin",
+        "http://localhost:3000/api/clients/clientLogin",
         {
           method: "POST",
           headers: { "Content-Type": "application/json", },
