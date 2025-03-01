@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:3000/api/clients/clientLogin",
+       `${import.meta.env.VITE_BACKEND_URL}/api/clients/clientLogin`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json", },
