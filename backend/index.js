@@ -10,13 +10,11 @@ const PORT = 3000;
 
 app.use(express.json());
 
-
+app.use(cors());
 
 app.use("/ping", (req, res) => {
   res.send("PONG");  
 });
-
-app.use(cors());
 
 app.use("/api/clients", clientRouter)
 
